@@ -1,0 +1,6 @@
+<h2>Lista de Empresas</h2>
+<ul>
+    {% for empresa in empresas %}
+    <li>{{ empresa.nombre }}: {{ empresa.descripcion }}</li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,6 @@
+<h2>Lista de Ofertas de Empleo</h2>
+<ul>
+    {% for oferta in ofertas %}
+    <li>{{ oferta.titulo }} en {{ oferta.empresa.nombre }}: Salario: {{ oferta.salario }}</li>
+    {% endfor %}
+</ul>
